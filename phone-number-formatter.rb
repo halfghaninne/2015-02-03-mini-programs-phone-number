@@ -17,10 +17,7 @@ require 'pry'
 class PhoneNumberFormatter
   
   def initialize(number)
-    number_as_string = number.to_s
-    @number = number_as_string
-    #might not need multiple steps here, since Driver class converts user-input to String and then plugs in for parameter here.
-    #right now the program, when run through Driver, is doing the same step twice. 
+    @number = number.to_s
   end
 
   # Public: .split_up_number
