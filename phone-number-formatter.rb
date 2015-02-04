@@ -36,22 +36,7 @@ class PhoneNumberFormatter
     @area_code = @number.byteslice(0, 3)
     @city_code = @number.byteslice(3, 3)
     @four_digits = @number.byteslice(6, 4)
+    
+    return "(#{@area_code}) #{@city_code}-#{@four_digits}"
+    
   end
-  
-  # Public: .format
-  # Puts a formatted number in a String, using instance variables created in .split_up_number.
-  # 
-  # Parameters: 
-  # None.
-  #
-  # Returns:
-  # String: String with desired formatting for the number.
-  #
-  # State Changes:
-  # None.
-  
-  def format
-    puts "(#{@area_code}) #{@city_code}-#{@four_digits}"
-  end
-  
-end

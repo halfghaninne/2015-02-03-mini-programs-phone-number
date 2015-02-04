@@ -23,8 +23,6 @@ class Driver
     if number_to_format.length == 10
       raw_answer = PhoneNumberFormatter.new(number_to_format)
       raw_answer.split_up_number
-      formatted_answer = raw_answer.format
-      puts formatted_answer
     else
       "I'm sorry that's not a valid number. Try again."
     end
